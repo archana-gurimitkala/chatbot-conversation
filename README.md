@@ -1,8 +1,8 @@
 # Chatbot Conversation: OpenAI vs Ollama
 
 This project simulates a conversation between two chatbots:
-- **OpenAI GPT-4** (or GPT-3.5-turbo)
-- **Ollama** (local LLM, default: llama2)
+- **OpenAI GPT-4o-mini** (gpt-4o-mini)
+- **Ollama llama3.2** (local LLM)
 
 ## Setup
 
@@ -23,7 +23,7 @@ This project simulates a conversation between two chatbots:
      ```
    - Pull a model (if not already done):
      ```bash
-     ollama pull llama2
+     ollama pull llama3.2
      # or
      ollama pull mistral
      # or any other model you prefer
@@ -37,8 +37,8 @@ This project simulates a conversation between two chatbots:
    ```
 
 2. (Optional) Update the model name in `chatbot_conversation.py`:
-   - Change `OLLAMA_MODEL = "llama2"` to your preferred model
-   - Change `model="gpt-4"` to `"gpt-3.5-turbo"` if you prefer
+   - Change `ollama_model = "llama3.2"` to your preferred Ollama model
+   - Change `gpt_model = "gpt-4o-mini"` to another OpenAI model if you prefer
 
 ## Usage
 
