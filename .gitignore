@@ -6,12 +6,23 @@ __pycache__/
 .Python
 env/
 venv/
+.venv/
 ENV/
-.venv
-
-# Environment variables
-.env
-.env.local
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
 # IDE
 .vscode/
@@ -20,15 +31,16 @@ ENV/
 *.swo
 *~
 
+# Environment variables
+.env
+.env.local
+
+# Logs and data
+*.log
+conversation_log.json
+*.json.bak
+
 # OS
 .DS_Store
 Thumbs.db
-
-# API Keys (if any local config files)
-config.ini
-secrets.json
-
-# Test files
-test_*.py
-*_test.py
 
